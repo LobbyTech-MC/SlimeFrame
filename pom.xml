@@ -152,9 +152,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.Slimefun</groupId>
+            <groupId>com.github.SlimefunGuguProject</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>RC-34</version>
+            <version>2024.3.1</version>
             <scope>provided</scope>
         </dependency>
 
@@ -191,16 +191,16 @@
         </dependency>
 
         <dependency>
-            <groupId>com.jeff_media</groupId>
+            <groupId>com.jeff-media</groupId>
             <artifactId>MorePersistentDataTypes</artifactId>
             <version>2.4.0</version>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
-            <groupId>com.jeff_media</groupId>
-            <artifactId>CustomBlockData</artifactId>
-            <version>2.2.0</version>
+            <groupId>com.jeff-media</groupId>
+            <artifactId>custom-block-data</artifactId>
+            <version>2.2.3</version>
             <scope>compile</scope>
         </dependency>
 

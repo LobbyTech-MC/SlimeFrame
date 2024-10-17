@@ -80,4 +80,8 @@ public class RelicInventory {
         }
     }
 
+	public Inventory getInventory() {
+		return inventory;
+	}
+
 }

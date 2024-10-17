@@ -15,4 +15,8 @@ public class SupportedPluginManager {
         this.geyser = Bukkit.getPluginManager().isPluginEnabled(GEYSER_SPIGOT);
     }
 
+	public boolean isGeyser() {
+		return geyser;
+	}
+
 }
