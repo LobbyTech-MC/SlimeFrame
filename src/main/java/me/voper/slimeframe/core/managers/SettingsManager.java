@@ -63,7 +63,6 @@ public final class SettingsManager {
         return dropChanceMap;
     }
 
-    @AllArgsConstructor
     public enum ConfigField {
 
         AUTO_UPDATE("options.auto-update", true),
@@ -106,12 +105,18 @@ public final class SettingsManager {
 
         private final String path;
         private final Object defaultValue;
+        
 
-        ConfigField(String path) {
-            this.path = path;
+		ConfigField(String path) {
+			this.path = path;
             this.defaultValue = null;
-        }
 
+        }
+		
+		ConfigField(String path, Object defaultValue) {
+            this.path = path;
+            this.defaultValue = defaultValue;
+        }
     }
 
 }

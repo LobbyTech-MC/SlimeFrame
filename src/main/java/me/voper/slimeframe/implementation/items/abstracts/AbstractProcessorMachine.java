@@ -66,7 +66,11 @@ public abstract class AbstractProcessorMachine extends AbstractMachine implement
         recipes.add(recipe);
     }
 
-    public void registerRecipe(int seconds, ItemStack[] input, ItemStack[] output) {
+    protected int getProcessingSpeed() {
+		return processingSpeed;
+	}
+
+	public void registerRecipe(int seconds, ItemStack[] input, ItemStack[] output) {
         registerRecipe(new MachineRecipe(seconds, input, output));
     }
 

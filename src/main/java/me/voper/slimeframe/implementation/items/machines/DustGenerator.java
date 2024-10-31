@@ -20,7 +20,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-
+import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
 import me.voper.slimeframe.implementation.items.abstracts.AbstractSelectorMachine;
 import me.voper.slimeframe.utils.MachineUtils;
 
@@ -120,4 +120,9 @@ public class DustGenerator extends AbstractSelectorMachine implements RecipeDisp
 
         return displayRecipes;
     }
+
+	public AbstractProcessorMachine setProduction(int production) {
+        this.production = production;
+		return this;
+	}
 }

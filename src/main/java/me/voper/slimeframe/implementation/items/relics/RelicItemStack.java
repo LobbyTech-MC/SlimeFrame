@@ -8,7 +8,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-
+import me.voper.slimeframe.implementation.items.relics.Relic.Era;
 import me.voper.slimeframe.utils.Colors;
 import me.voper.slimeframe.utils.HeadTextures;
 
@@ -77,5 +77,21 @@ public class RelicItemStack extends SlimefunItemStack {
         }
         return skull;
     }
+
+	public Era getRelicEra() {
+		return relicEra;
+	}
+
+	public SlimefunItemStack[] getCommonDrops() {
+		return commonDrops;
+	}
+
+	public SlimefunItemStack[] getUncommonDrops() {
+		return uncommonDrops;
+	}
+
+	public SlimefunItemStack getRareDrop() {
+		return rareDrop;
+	}
 
 }

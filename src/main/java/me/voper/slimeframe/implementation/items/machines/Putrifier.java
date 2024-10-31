@@ -189,4 +189,9 @@ public class Putrifier extends AbstractProcessorMachine implements RecipeDisplay
         SUSPICIOUS_STEWS.add(stew);
     }
 
+	public AbstractProcessorMachine setProduction(int production) {
+		this.production = production;
+		return this;
+	}
+
 }

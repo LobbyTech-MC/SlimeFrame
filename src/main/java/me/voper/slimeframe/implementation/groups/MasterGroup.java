@@ -52,7 +52,12 @@ public class MasterGroup extends FlexItemGroup {
         }
     }
 
-    public MasterGroup(NamespacedKey key, MasterGroup parent, ItemStack item, String name) {
+    private void setVisibility(boolean visibility) {
+		this.visibility = visibility;
+		
+	}
+
+	public MasterGroup(NamespacedKey key, MasterGroup parent, ItemStack item, String name) {
         this(key, parent, item, 3, name);
     }
 

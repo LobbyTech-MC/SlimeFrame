@@ -44,4 +44,9 @@ public class SulfateProducer extends AbstractProcessorMachine implements RecipeD
     public List<ItemStack> getDisplayRecipes() {
         return List.of(new ItemStack(Material.BASALT, 4), new SlimefunItemStack(SlimefunItems.SULFATE, 4 * production));
     }
+
+	public AbstractProcessorMachine setProduction(int production) {
+		this.production = production;
+		return this;
+	}
 }

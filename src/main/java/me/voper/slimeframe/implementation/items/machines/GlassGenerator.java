@@ -14,7 +14,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.tags.SlimefunTag;
-
+import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
 import me.voper.slimeframe.implementation.items.abstracts.AbstractSelectorMachine;
 import me.voper.slimeframe.utils.MachineUtils;
 
@@ -92,4 +92,9 @@ public class GlassGenerator extends AbstractSelectorMachine implements RecipeDis
                 .flatMap(item -> Stream.of(new ItemStack(Material.SAND), new ItemStack(item.getType(), outputAmount * production)))
                 .toList();
     }
+
+	public AbstractProcessorMachine setProduction(int production) {
+		this.production = production;
+		return this;
+	}
 }

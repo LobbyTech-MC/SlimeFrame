@@ -77,7 +77,30 @@ public class PrimeComponents {
         return controlUnit;
     }
 
-    @Nonnull
+    private PrimeComponents setControlUnit(SlimefunItemStack controlUnit) {
+		this.controlUnit = controlUnit;
+		return this;
+	}
+    private PrimeComponents setPowerCell(SlimefunItemStack powerCell) {
+		this.powerCell = powerCell;
+		return this;
+	}
+    private PrimeComponents setCoreModule(SlimefunItemStack coreModule) {
+		this.coreModule = coreModule;
+		return this;
+	}
+
+	private SlimefunItemStack getControlUnit() {
+		return controlUnit;
+	}
+    private SlimefunItemStack getPowerCell() {
+		return powerCell;
+	}
+    private SlimefunItemStack getCoreModule() {
+		return coreModule;
+	}
+
+	@Nonnull
     public static SlimefunItemStack createPowerCell(SlimefunItemStack item) {
         if (COMPONENTS_MAP.get(item) != null && COMPONENTS_MAP.get(item).getPowerCell() != null) {
             return COMPONENTS_MAP.get(item).getPowerCell();

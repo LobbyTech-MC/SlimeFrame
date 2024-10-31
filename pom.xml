@@ -11,8 +11,8 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigot-api.version>1.19-R0.1-SNAPSHOT</spigot-api.version>
-        <java.version>16</java.version>
+        <spigot-api.version>1.21.1-R0.1-SNAPSHOT</spigot-api.version>
+        <java.version>21</java.version>
     </properties>
 
     <repositories>
@@ -75,7 +75,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.4.1</version>
+                <version>3.6.0</version>
                 <configuration>
                     <minimizeJar>true</minimizeJar>
                     <dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml</dependencyReducedPomLocation>
@@ -227,7 +227,7 @@
         <dependency>
             <groupId>net.guizhanss</groupId>
             <artifactId>GuizhanLibPlugin</artifactId>
-            <version>1.6.1</version>
+            <version>1.7.8</version>
             <scope>provided</scope>
         </dependency>
 

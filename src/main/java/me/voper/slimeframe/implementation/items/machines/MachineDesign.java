@@ -33,4 +33,57 @@ public final class MachineDesign {
     public static final MachineDesign SELECTOR_MACHINE = CRAFTING_MACHINE
             .withSelectorSlot(4);
 
+
+	private MachineDesign inputBorder(int[] inputBorder) {
+		this.inputBorder = inputBorder;
+		return this;
+	}
+	private MachineDesign inputSlots(int[] inputSlots) {
+		this.inputSlots = inputSlots;
+		return this;
+	}
+	private MachineDesign outputBorder(int[] outputBorder) {
+		this.outputBorder = outputBorder;
+		return this;
+	}
+	private MachineDesign outputSlots(int[] outputSlots) {
+		this.outputSlots = outputSlots;
+		return this;
+	}
+	private MachineDesign statusSlot(int statusSlot) {
+		this.statusSlot = statusSlot;
+		return this;
+	}
+	
+	private MachineDesign background(int[] background) {
+		this.background = background;
+		return this;
+	}
+
+	private MachineDesign withSelectorSlot(int selectorSlot) {
+		this.selectorSlot = selectorSlot;
+		return this;
+	}
+	public int[] inputBorder() {
+		return inputBorder;
+	}
+	public int[] outputBorder() {
+		return outputBorder;
+	}
+	public int[] inputSlots() {
+		return inputSlots;
+	}
+	public int[] outputSlots() {
+		return outputSlots;
+	}
+	public int statusSlot() {
+		return statusSlot;
+	}
+	public int selectorSlot() {
+		return selectorSlot;
+	}
+	public int[] background() {
+		return background;
+	}
+
 }

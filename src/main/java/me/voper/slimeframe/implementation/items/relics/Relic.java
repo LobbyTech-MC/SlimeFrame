@@ -8,8 +8,8 @@ import java.util.concurrent.ThreadLocalRandom;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.jeff_media.morepersistentdatatypes.DataType;
-
+import org.apache.commons.math3.distribution.EnumeratedDistribution;
+import org.apache.commons.math3.util.Pair;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
@@ -19,6 +19,8 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
+
+import com.jeff_media.morepersistentdatatypes.DataType;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -31,7 +33,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.commons.lang.Validate;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
-
+import lombok.Getter;
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.api.events.PlayerOpenRelicEvent;
 import me.voper.slimeframe.api.events.PlayerRefineRelicEvent;
@@ -41,12 +43,7 @@ import me.voper.slimeframe.utils.ChatUtils;
 import me.voper.slimeframe.utils.Colors;
 import me.voper.slimeframe.utils.Keys;
 import me.voper.slimeframe.utils.Utils;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 import net.md_5.bungee.api.ChatColor;
-import org.apache.commons.math3.distribution.EnumeratedDistribution;
-import org.apache.commons.math3.util.Pair;
 
 @Getter
 public class Relic extends SlimefunItem implements NotPlaceable {
@@ -248,12 +245,19 @@ public class Relic extends SlimefunItem implements NotPlaceable {
         relic.setItemMeta(itemMeta);
     }
 
-    public enum Era {
+    public static SlimeFrame getPlugin() {
+		return plugin;
+	}
+
+	public Era getEra() {
+		return era;
+	}
+
+	public enum Era {
         LITH, MESO, NEO, AXI
     }
 
     @Getter
-    @AllArgsConstructor
     public enum Refinement {
         INTACT("完整", 76, 22, 2, 0),
         EXCEPTIONAL("优良", 70, 26, 4, 25),
@@ -265,6 +269,28 @@ public class Relic extends SlimefunItem implements NotPlaceable {
         private final int uncommonProbability;
         private final int rareProbability;
         private final int tracesRequired;
+		Refinement(String displayName, int commonProbability, int uncommonProbability, int rareProbability, int tracesRequired) {
+			this.displayName = displayName;
+			this.commonProbability = commonProbability;
+			this.uncommonProbability = uncommonProbability;
+			this.rareProbability = rareProbability;
+			this.tracesRequired = tracesRequired;
+		}
+		String getDisplayName() {
+			return displayName;
+		}
+		double getRareProbability() {
+			return rareProbability;
+		}
+		double getUncommonProbability() {
+			return uncommonProbability;
+		}
+		double getCommonProbability() {
+			return commonProbability;
+		}
+		int getTracesRequired() {
+			return tracesRequired;
+		}
 
     }
 

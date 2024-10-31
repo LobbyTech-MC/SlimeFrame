@@ -74,7 +74,19 @@ public class EnergyCentral extends AbstractTickingContainer {
         preset.addItem(getConsumersSlot(), consumers, ChestMenuUtils.getEmptyClickHandler());
     }
 
-    @Override
+    private int getConsumersSlot() {
+		return consumersSlot;
+	}
+
+	private int getCapacitorsSlot() {
+		return capacitorsSlot;
+	}
+
+	private int getGeneratorsSlot() {
+		return generatorsSlot;
+	}
+
+	@Override
     protected void tick(BlockMenu menu, Block b) {
         final BlockPosition blockPosition = new BlockPosition(b);
         int progress = PROGRESS_MAP.getOrDefault(blockPosition, 0);

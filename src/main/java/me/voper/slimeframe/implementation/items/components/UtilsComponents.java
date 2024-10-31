@@ -76,7 +76,30 @@ public class UtilsComponents {
         return voidShardEssence;
     }
 
-    public static SlimefunItemStack createTemporal(SlimefunItemStack item) {
+    private UtilsComponents setVoidShardEssence(SlimefunItemStack voidShardEssence) {
+		this.voidShardEssence = voidShardEssence;
+		return this;
+	}
+    private UtilsComponents setTemporalCogwheel(SlimefunItemStack temporalCogwheel) {
+		this.temporalCogwheel = temporalCogwheel;
+		return this;
+	}
+    private UtilsComponents setNeuralNexusCore(SlimefunItemStack neuralNexusCore) {
+		this.neuralNexusCore = neuralNexusCore;
+		return this;
+	}
+
+	private SlimefunItemStack getVoidShardEssence() {
+		return voidShardEssence;
+	}
+    private SlimefunItemStack getTemporalCogwheel() {
+		return temporalCogwheel;
+	}
+    private SlimefunItemStack getNeuralNexusCore() {
+		return neuralNexusCore;
+	}
+
+	public static SlimefunItemStack createTemporal(SlimefunItemStack item) {
         if (COMPONENTS_MAP.get(item) != null && COMPONENTS_MAP.get(item).getTemporalCogwheel() != null) {
             return COMPONENTS_MAP.get(item).getTemporalCogwheel();
         }

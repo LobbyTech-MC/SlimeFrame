@@ -87,7 +87,11 @@ public class ItemProjector extends AbstractTickingContainer {
         HOLOGRAM_MAP.put(bp, currentItem);
     }
 
-    @Override
+    private int getItemSlot() {
+		return itemSlot;
+	}
+
+	@Override
     protected void createMenu(@Nonnull BlockMenuPreset preset) {
         preset.drawBackground(new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, " "), new int[]{12, 13, 14, 21, 23, 30, 31, 32});
         preset.drawBackground(new int[]{
@@ -103,7 +107,23 @@ public class ItemProjector extends AbstractTickingContainer {
         preset.addItem(getSizeSlot(), SIZE);
     }
 
-    @Override
+    private int getSizeSlot() {
+		return sizeSlot;
+	}
+
+	private int getSpinSlot() {
+		return spinSlot;
+	}
+
+	private int getDecrementHeightSlot() {
+		return decrementHeightSlot;
+	}
+
+	private int getIncrementHeightSlot() {
+		return incrementHeightSlot;
+	}
+
+	@Override
     protected void onNewInstance(BlockMenu menu, Block b) {
         super.onNewInstance(menu, b);
         final BlockPosition bp = new BlockPosition(b);

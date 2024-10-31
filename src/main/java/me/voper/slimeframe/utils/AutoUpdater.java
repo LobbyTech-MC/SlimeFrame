@@ -158,7 +158,11 @@ public final class AutoUpdater implements Runnable {
             this.jarName = element.getAsJsonObject().get("assets").getAsJsonArray().get(0).getAsJsonObject().get("name").getAsString();
         }
 
-        @Nonnull
+        public String getTagName() {
+			return tagName;
+		}
+
+		@Nonnull
         public String getDownloadUrl() {
             return "https://github.com/VoperAD/SlimeFrame/releases/download/" + tagName + "/" + jarName;
         }

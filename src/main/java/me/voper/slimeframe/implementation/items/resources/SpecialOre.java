@@ -80,6 +80,14 @@ public final class SpecialOre extends SlimefunItem implements NotPlaceable, Comp
         Rarity(int value) {
             this.value = value;
         }
+
+		public double getValue() {
+			return value;
+		}
     }
+
+	public Rarity getRarity() {
+		return rarity;
+	}
 
 }

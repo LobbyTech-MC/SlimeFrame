@@ -2,6 +2,7 @@ package me.voper.slimeframe.utils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -13,16 +14,20 @@ import io.github.thebusybiscuit.slimefun4.libraries.commons.lang.Validate;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
 @ParametersAreNonnullByDefault
 public class RandomItemStacks<T extends ItemStack> {
 
     @Getter
     private final List<T> items = new ArrayList<>();
 
+    public RandomItemStacks() {
+    }
+    
     public RandomItemStacks(T[] itemStacks) {
         this.items.addAll(List.of(itemStacks));
     }
+    
+    
 
     public RandomItemStacks(RandomItemStacks<T>[] randomItemStacksArray) {
         for (RandomItemStacks<T> randomItemStack : randomItemStacksArray) {
@@ -38,5 +43,9 @@ public class RandomItemStacks<T extends ItemStack> {
     public void add(T item) {
         this.items.add(item);
     }
+
+	public List<T> getItems() {
+		return items;
+	}
 
 }

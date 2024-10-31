@@ -17,14 +17,13 @@ import lombok.With;
 import net.md_5.bungee.api.ChatColor;
 
 @Getter
-@AllArgsConstructor
 @ParametersAreNonnullByDefault
 public class SFrameTheme {
 
     public static final ChatColor DEFAULT_LORE_COLOR = ChatColor.of("#9da8a3");
 
     @With
-    private final ChatColor nameColor;
+    private ChatColor nameColor;
     private final ChatColor loreColor;
     private final String lastLine;
 
@@ -36,7 +35,13 @@ public class SFrameTheme {
         this(nameColor, DEFAULT_LORE_COLOR, lastLine);
     }
 
-    @Nonnull
+    public SFrameTheme(ChatColor nameColor, ChatColor loreColor, String lastLine) {
+		this.nameColor = nameColor;
+		this.loreColor = loreColor;
+		this.lastLine = lastLine;
+	}
+
+	@Nonnull
     public static SlimefunItemStack sfStackFromTheme(String id, ItemStack itemStack, SFrameTheme theme, String name, String... lore) {
         List<String> coloredLore = new ArrayList<>();
         for (String s : lore) {
@@ -66,4 +71,17 @@ public class SFrameTheme {
     public static SlimefunItemStack sfStackFromTheme(String id, Material material, SFrameTheme theme, String name, String... lore) {
         return sfStackFromTheme(id, new ItemStack(material), theme, name, lore);
     }
+
+	public SFrameTheme withNameColor(ChatColor nameColor) {
+		this.nameColor = nameColor;
+		return this;
+	}
+
+	public ChatColor getLoreColor() {
+		return loreColor;
+	}
+
+	public ChatColor getNameColor() {
+		return nameColor;
+	}
 }

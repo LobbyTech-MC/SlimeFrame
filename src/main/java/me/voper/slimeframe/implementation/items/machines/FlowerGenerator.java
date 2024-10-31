@@ -129,4 +129,9 @@ public class FlowerGenerator extends AbstractMachine {
         return 4;
     }
 
+	public AbstractMachine setProduction(int production) {
+		this.production = production;
+		return this;
+	}
+
 }

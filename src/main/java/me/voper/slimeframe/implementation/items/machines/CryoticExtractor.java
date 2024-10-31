@@ -133,4 +133,9 @@ public class CryoticExtractor extends AbstractMachine {
             new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, ChatColor.GREEN + "提取中..."));
     }
 
+	public AbstractMachine setProcessingSpeed(int processingSpeed) {
+		this.processingSpeed = processingSpeed;
+		return this;
+	}
+
 }
