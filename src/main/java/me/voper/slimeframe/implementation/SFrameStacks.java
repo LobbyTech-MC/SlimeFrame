@@ -51,7 +51,7 @@ public final class SFrameStacks {
     @Nonnull
     public static ItemStack enchantedItem(@Nonnull Material m) {
         return new CustomItemStack(m, (meta) -> {
-            meta.addEnchant(Enchantment.LUCK, 1, false);
+            meta.addEnchant(Enchantment.LUCK_OF_THE_SEA, 1, false);
             meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         });
     }
@@ -62,7 +62,7 @@ public final class SFrameStacks {
         PotionMeta meta = (PotionMeta) potion.getItemMeta();
         if (meta != null) {
             meta.setBasePotionData(new PotionData(type));
-            meta.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
+            meta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
             potion.setItemMeta(meta);
         }
         return potion;

@@ -36,7 +36,7 @@ public final class Utils {
     public static void enchant(ItemStack item) {
         ItemMeta itemMeta = item.getItemMeta();
         if (itemMeta == null) return;
-        itemMeta.addEnchant(Enchantment.LUCK, 1, false);
+        itemMeta.addEnchant(Enchantment.LUCK_OF_THE_SEA, 1, false);
         itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(itemMeta);
     }
@@ -44,7 +44,7 @@ public final class Utils {
     public static void disenchant(ItemStack item) {
         ItemMeta itemMeta = item.getItemMeta();
         if (itemMeta == null) return;
-        itemMeta.removeEnchant(Enchantment.LUCK);
+        itemMeta.removeEnchant(Enchantment.LUCK_OF_THE_SEA);
         itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(itemMeta);
     }

@@ -105,7 +105,7 @@ public class MerchantSoulContract extends SimpleSlimefunItem<EntityInteractHandl
                 PersistentDataAPI.set(meta, Keys.MERCHANT_RECIPE, new MerchantRecipeListDataType(), recipes);
 
                 // Update the meta
-                meta.addEnchant(Enchantment.LUCK, 1, true);
+                meta.addEnchant(Enchantment.LUCK_OF_THE_SEA, 1, true);
                 meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 
                 List<String> lore = new ArrayList<>();
@@ -146,7 +146,7 @@ public class MerchantSoulContract extends SimpleSlimefunItem<EntityInteractHandl
 
                 merchant.getWorld().playSound(merchant.getLocation(), Sound.ENTITY_VILLAGER_CELEBRATE, 1, 1.4F);
                 merchant.getWorld().spawnParticle(Particle.CRIMSON_SPORE, merchant.getLocation(), 10, 0, offset / 2, 0, 0);
-                merchant.getWorld().spawnParticle(Particle.ENCHANTMENT_TABLE, merchant.getLocation(), 5, 0.04, 1, 0.04);
+                merchant.getWorld().spawnParticle(Particle.ENCHANT, merchant.getLocation(), 5, 0.04, 1, 0.04);
 
                 e.setCancelled(true);
                 merchant.setHealth(0);
