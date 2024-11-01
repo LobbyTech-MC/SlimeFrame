@@ -2,6 +2,8 @@ package me.voper.slimeframe.core.managers;
 
 import java.util.Arrays;
 
+import javax.annotation.Nonnull;
+
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.commands.Commands;
 import me.voper.slimeframe.implementation.items.relics.Relic;
@@ -13,7 +15,7 @@ public class CommandsManager extends PaperCommandManager {
     private final SlimeFrame plugin;
     private final SettingsManager sm;
 
-    public CommandsManager(SlimeFrame plugin) {
+    public CommandsManager(@Nonnull SlimeFrame plugin) {
         super(plugin);
         this.plugin = plugin;
         this.sm = SlimeFrame.getSettingsManager();
@@ -45,9 +47,5 @@ public class CommandsManager extends PaperCommandManager {
     private void registerCommandCompletions() {
         this.getCommandCompletions().registerCompletion("refinement", c -> Arrays.stream(Relic.Refinement.values()).map(Enum::name).toList());
     }
-
-	public SlimeFrame getPlugin() {
-		return plugin;
-	}
 
 }

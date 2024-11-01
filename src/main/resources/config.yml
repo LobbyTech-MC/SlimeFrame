@@ -1,5 +1,5 @@
 options:
-  auto-update: true
+  auto-update: false
   # If set to true, the plugin will automatically update to the latest major version
   # This option is only available if auto-update is set to true
   # Be careful with this option, as a new major version represents a breaking change

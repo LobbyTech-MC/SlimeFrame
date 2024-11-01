@@ -40,7 +40,7 @@ public class FlowerGenerator extends AbstractMachine {
     private static final Map<BlockPosition, Integer> PROGRESS_MAP = new HashMap<>();
     private static final Map<Material, ItemStack> POTTED_FLOWERS_MAP = new EnumMap<Material, ItemStack>(
             Tag.FLOWER_POTS.getValues().stream()
-                    .filter(m -> m.name().startsWith("POTTED_"))
+                    .filter(m -> m.name().startsWith("POTTED_") && m.name() != "POTTED_AZALEA_BUSH")
                     .collect(Collectors.toMap(Function.identity(), material -> {
                         Material flower = Material.getMaterial(material.name().substring(7));
                         return flower == null ? new ItemStack(material) : new ItemStack(flower);

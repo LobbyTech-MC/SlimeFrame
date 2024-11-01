@@ -28,7 +28,8 @@ public class MerchantRecipeListDataType implements PersistentDataType<byte[], Li
         return byte[].class;
     }
 
-    @Nonnull
+    @SuppressWarnings("unchecked")
+	@Nonnull
     @Override
     public Class<List<MerchantRecipe>> getComplexType() {
         return (Class<List<MerchantRecipe>>) (Class<?>) List.class;

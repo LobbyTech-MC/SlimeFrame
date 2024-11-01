@@ -14,8 +14,6 @@ import org.bukkit.util.NumberConversions;
 
 import me.voper.slimeframe.SlimeFrame;
 
-import lombok.AllArgsConstructor;
-
 public final class SettingsManager {
 
     private final SlimeFrame plugin;
