@@ -1,6 +1,10 @@
 package me.voper.slimeframe.implementation.items.machines;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 import javax.annotation.Nonnull;
@@ -14,11 +18,9 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.tags.SlimefunTag;
-import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.voper.slimeframe.implementation.items.abstracts.AbstractSelectorMachine;
 import me.voper.slimeframe.utils.MachineUtils;
-
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import net.md_5.bungee.api.ChatColor;
 
 public class GlassGenerator extends AbstractSelectorMachine implements RecipeDisplayItem {
@@ -93,7 +95,7 @@ public class GlassGenerator extends AbstractSelectorMachine implements RecipeDis
                 .toList();
     }
 
-	public AbstractProcessorMachine setProduction(int production) {
+	public AbstractSelectorMachine setProduction(int production) {
 		this.production = production;
 		return this;
 	}

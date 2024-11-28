@@ -7,27 +7,22 @@ import java.util.Map;
 
 import javax.annotation.Nonnull;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
-
-import me.voper.slimeframe.utils.Keys;
-
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
-import me.voper.slimeframe.implementation.items.abstracts.AbstractSelectorMachine;
-import me.voper.slimeframe.utils.MachineUtils;
-
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
+import me.voper.slimeframe.implementation.items.abstracts.AbstractSelectorMachine;
+import me.voper.slimeframe.utils.Keys;
+import me.voper.slimeframe.utils.MachineUtils;
 import net.md_5.bungee.api.ChatColor;
-
-import org.bukkit.inventory.meta.ItemMeta;
 
 public class DustGenerator extends AbstractSelectorMachine implements RecipeDisplayItem {
 
@@ -121,7 +116,7 @@ public class DustGenerator extends AbstractSelectorMachine implements RecipeDisp
         return displayRecipes;
     }
 
-	public AbstractProcessorMachine setProduction(int production) {
+	public AbstractSelectorMachine setProduction(int production) {
         this.production = production;
 		return this;
 	}

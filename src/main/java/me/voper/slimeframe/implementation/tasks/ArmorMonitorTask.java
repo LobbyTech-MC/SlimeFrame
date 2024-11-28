@@ -104,4 +104,8 @@ public class ArmorMonitorTask implements Runnable {
         return armorCount == 4;
     }
 
+	public SlimeFrame getPlugin() {
+		return plugin;
+	}
+
 }

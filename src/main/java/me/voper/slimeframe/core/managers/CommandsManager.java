@@ -48,4 +48,8 @@ public class CommandsManager extends PaperCommandManager {
         this.getCommandCompletions().registerCompletion("refinement", c -> Arrays.stream(Relic.Refinement.values()).map(Enum::name).toList());
     }
 
+	public SlimeFrame getPlugin() {
+		return plugin;
+	}
+
 }
