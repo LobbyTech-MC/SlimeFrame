@@ -4,11 +4,10 @@ import java.util.Arrays;
 
 import javax.annotation.Nonnull;
 
+import co.aikar.commands.PaperCommandManager;
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.commands.Commands;
 import me.voper.slimeframe.implementation.items.relics.Relic;
-
-import co.aikar.commands.PaperCommandManager;
 
 public class CommandsManager extends PaperCommandManager {
 

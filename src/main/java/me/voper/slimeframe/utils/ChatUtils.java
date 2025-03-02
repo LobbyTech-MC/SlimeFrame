@@ -9,10 +9,9 @@ import javax.annotation.Nonnull;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import lombok.experimental.UtilityClass;
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.managers.SettingsManager;
-
-import lombok.experimental.UtilityClass;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ComponentBuilder;

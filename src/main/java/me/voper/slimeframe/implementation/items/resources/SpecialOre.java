@@ -19,12 +19,10 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-
+import lombok.Getter;
 import me.voper.slimeframe.implementation.groups.Groups;
 import me.voper.slimeframe.utils.Keys;
 import me.voper.slimeframe.utils.Utils;
-
-import lombok.Getter;
 
 @Getter
 @ParametersAreNonnullByDefault

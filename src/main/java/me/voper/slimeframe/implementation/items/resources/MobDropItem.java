@@ -1,6 +1,11 @@
 package me.voper.slimeframe.implementation.items.resources;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.annotation.Nonnull;
@@ -21,12 +26,10 @@ import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.commons.lang.Validate;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-
+import lombok.Getter;
 import me.voper.slimeframe.core.attributes.AdvancedMobDrop;
 import me.voper.slimeframe.utils.Keys;
 import me.voper.slimeframe.utils.Utils;
-
-import lombok.Getter;
 import net.guizhanss.guizhanlib.minecraft.helper.MaterialHelper;
 import net.md_5.bungee.api.ChatColor;
 

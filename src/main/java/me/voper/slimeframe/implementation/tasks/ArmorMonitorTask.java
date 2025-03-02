@@ -20,7 +20,6 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.ProtectiveArmor;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.implementation.items.armor.SlimefunArmorPiece;
 import io.github.thebusybiscuit.slimefun4.utils.itemstack.ItemStackWrapper;
-
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.attributes.FreezingItem;
 import me.voper.slimeframe.core.attributes.FreezingProtection;

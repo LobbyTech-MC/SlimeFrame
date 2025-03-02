@@ -13,17 +13,15 @@ import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
-
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.implementation.SFrameStacks;
 import me.voper.slimeframe.implementation.SFrameTheme;
 import me.voper.slimeframe.implementation.items.relics.RelicItemStack;
 import me.voper.slimeframe.utils.Colors;
 import me.voper.slimeframe.utils.HeadTextures;
-
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
 import net.md_5.bungee.api.ChatColor;
 
 @Getter

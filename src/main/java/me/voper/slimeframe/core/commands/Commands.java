@@ -4,9 +4,19 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import co.aikar.commands.BaseCommand;
+import co.aikar.commands.CommandHelp;
+import co.aikar.commands.annotation.CommandAlias;
+import co.aikar.commands.annotation.CommandCompletion;
+import co.aikar.commands.annotation.CommandPermission;
+import co.aikar.commands.annotation.Dependency;
+import co.aikar.commands.annotation.Description;
+import co.aikar.commands.annotation.HelpCommand;
+import co.aikar.commands.annotation.Optional;
+import co.aikar.commands.annotation.Subcommand;
+import co.aikar.commands.bukkit.contexts.OnlinePlayer;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
-
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.managers.RelicInventoryManager;
 import me.voper.slimeframe.core.managers.SettingsManager;
@@ -14,11 +24,6 @@ import me.voper.slimeframe.implementation.items.relics.Relic;
 import me.voper.slimeframe.implementation.items.relics.RelicInventory;
 import me.voper.slimeframe.utils.ChatUtils;
 import me.voper.slimeframe.utils.Keys;
-
-import co.aikar.commands.BaseCommand;
-import co.aikar.commands.CommandHelp;
-import co.aikar.commands.annotation.*;
-import co.aikar.commands.bukkit.contexts.OnlinePlayer;
 import net.md_5.bungee.api.ChatColor;
 
 @CommandAlias("%slimeframe")

@@ -12,7 +12,6 @@ import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.attributes.AdvancedMobDrop;
 

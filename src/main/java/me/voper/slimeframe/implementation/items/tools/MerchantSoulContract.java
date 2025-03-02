@@ -28,15 +28,12 @@ import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunIte
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
-
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.datatypes.MerchantRecipeListDataType;
 import me.voper.slimeframe.core.managers.SettingsManager;
 import me.voper.slimeframe.utils.ChatUtils;
 import me.voper.slimeframe.utils.Colors;
 import me.voper.slimeframe.utils.Keys;
-import me.voper.slimeframe.utils.Utils;
-
 import net.guizhanss.guizhanlib.minecraft.helper.inventory.ItemStackHelper;
 import net.md_5.bungee.api.ChatColor;
 

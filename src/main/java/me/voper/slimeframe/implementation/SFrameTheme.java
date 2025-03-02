@@ -10,8 +10,6 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.With;
 import net.md_5.bungee.api.ChatColor;

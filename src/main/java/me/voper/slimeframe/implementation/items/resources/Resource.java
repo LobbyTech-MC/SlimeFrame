@@ -11,7 +11,6 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.NotHopperable;
 import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
 import io.github.thebusybiscuit.slimefun4.core.attributes.Radioactivity;
 import io.github.thebusybiscuit.slimefun4.implementation.items.RadioactiveItem;
-
 import me.voper.slimeframe.implementation.groups.Groups;
 import me.voper.slimeframe.utils.Utils;
 

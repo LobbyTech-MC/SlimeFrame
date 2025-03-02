@@ -6,14 +6,14 @@ import java.util.stream.Stream;
 
 import javax.annotation.Nonnull;
 
-import com.cryptomorin.xseries.XMaterial;
-
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+
+import com.cryptomorin.xseries.XMaterial;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -23,7 +23,6 @@ import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.implementation.items.LimitedUseItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
-
 import me.voper.slimeframe.utils.Keys;
 
 public class OrokinWand extends LimitedUseItem implements RecipeDisplayItem {

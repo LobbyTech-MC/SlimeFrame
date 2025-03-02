@@ -1,6 +1,14 @@
 package me.voper.slimeframe.core.datatypes;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.ObjectStreamClass;
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -15,10 +23,9 @@ import org.bukkit.persistence.PersistentDataAdapterContext;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.util.io.BukkitObjectInputStream;
 import org.bukkit.util.io.BukkitObjectOutputStream;
+import org.yaml.snakeyaml.external.biz.base64Coder.Base64Coder;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-
-import org.yaml.snakeyaml.external.biz.base64Coder.Base64Coder;
 
 public class MerchantRecipeListDataType implements PersistentDataType<byte[], List<MerchantRecipe>> {
 

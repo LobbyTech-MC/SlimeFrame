@@ -7,12 +7,12 @@ import java.util.Set;
 
 import javax.annotation.Nonnull;
 
-import com.cryptomorin.xseries.XMaterial;
-
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+
+import com.cryptomorin.xseries.XMaterial;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -22,7 +22,6 @@ import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.items.misc.AlloyIngot;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.attributes.FreezingItem;
 import me.voper.slimeframe.core.managers.SettingsManager;
@@ -31,12 +30,37 @@ import me.voper.slimeframe.implementation.items.components.PrimeComponents;
 import me.voper.slimeframe.implementation.items.components.UtilsComponents;
 import me.voper.slimeframe.implementation.items.gear.CryogenicArmorPiece;
 import me.voper.slimeframe.implementation.items.generators.CumulativeGenerator;
-import me.voper.slimeframe.implementation.items.machines.*;
+import me.voper.slimeframe.implementation.items.machines.ArtificialMangrove;
+import me.voper.slimeframe.implementation.items.machines.AutoTrader;
+import me.voper.slimeframe.implementation.items.machines.BasaltGenerator;
+import me.voper.slimeframe.implementation.items.machines.ChunkEater;
+import me.voper.slimeframe.implementation.items.machines.ConcreteGenerator;
+import me.voper.slimeframe.implementation.items.machines.CryoticExtractor;
+import me.voper.slimeframe.implementation.items.machines.DustGenerator;
+import me.voper.slimeframe.implementation.items.machines.FlowerGenerator;
+import me.voper.slimeframe.implementation.items.machines.GlassGenerator;
+import me.voper.slimeframe.implementation.items.machines.Putrifier;
+import me.voper.slimeframe.implementation.items.machines.Recycler;
+import me.voper.slimeframe.implementation.items.machines.SulfateProducer;
+import me.voper.slimeframe.implementation.items.machines.TelluriumFragmentsSynthesizer;
+import me.voper.slimeframe.implementation.items.machines.TerracottaGenerator;
+import me.voper.slimeframe.implementation.items.machines.ThermiaExtractor;
+import me.voper.slimeframe.implementation.items.machines.TreePeeler;
+import me.voper.slimeframe.implementation.items.machines.WoolGenerator;
 import me.voper.slimeframe.implementation.items.multiblocks.Foundry;
 import me.voper.slimeframe.implementation.items.relics.Relic;
-import me.voper.slimeframe.implementation.items.resources.*;
-import me.voper.slimeframe.implementation.items.tools.*;
-
+import me.voper.slimeframe.implementation.items.resources.CoolantCanister;
+import me.voper.slimeframe.implementation.items.resources.Cryotic;
+import me.voper.slimeframe.implementation.items.resources.MobDropItem;
+import me.voper.slimeframe.implementation.items.resources.Resource;
+import me.voper.slimeframe.implementation.items.resources.SpecialOre;
+import me.voper.slimeframe.implementation.items.tools.EnergyCentral;
+import me.voper.slimeframe.implementation.items.tools.InputConfigurator;
+import me.voper.slimeframe.implementation.items.tools.ItemProjector;
+import me.voper.slimeframe.implementation.items.tools.MerchantSoulContract;
+import me.voper.slimeframe.implementation.items.tools.NosamPick;
+import me.voper.slimeframe.implementation.items.tools.OrokinWand;
+import me.voper.slimeframe.implementation.items.tools.SelectorConfigurator;
 import net.md_5.bungee.api.ChatColor;
 
 public final class SFrameItems {

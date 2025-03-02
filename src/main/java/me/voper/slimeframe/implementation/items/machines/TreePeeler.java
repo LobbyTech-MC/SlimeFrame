@@ -8,16 +8,15 @@ import java.util.stream.Stream;
 
 import javax.annotation.Nonnull;
 
-import com.cryptomorin.xseries.XMaterial;
-
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+
+import com.cryptomorin.xseries.XMaterial;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
-
 import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
 
 public class TreePeeler extends AbstractProcessorMachine implements RecipeDisplayItem {

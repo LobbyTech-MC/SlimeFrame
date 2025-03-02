@@ -10,13 +10,11 @@ import org.bukkit.inventory.ItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-
+import lombok.Setter;
+import lombok.experimental.Accessors;
 import me.voper.slimeframe.implementation.groups.Groups;
 import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
 import me.voper.slimeframe.implementation.items.multiblocks.Foundry;
-
-import lombok.Setter;
-import lombok.experimental.Accessors;
 
 @Accessors(chain = true)
 public class SulfateProducer extends AbstractProcessorMachine implements RecipeDisplayItem {

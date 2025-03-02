@@ -15,7 +15,6 @@ import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
-
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.managers.RelicInventoryManager;
 import me.voper.slimeframe.core.managers.SettingsManager;
@@ -23,7 +22,6 @@ import me.voper.slimeframe.implementation.items.relics.Relic;
 import me.voper.slimeframe.implementation.items.relics.RelicInventory;
 import me.voper.slimeframe.utils.ChatUtils;
 import me.voper.slimeframe.utils.Keys;
-
 import net.md_5.bungee.api.ChatColor;
 
 public final class RelicsListener implements Listener {

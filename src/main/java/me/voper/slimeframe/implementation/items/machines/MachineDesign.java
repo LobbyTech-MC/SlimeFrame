@@ -1,6 +1,10 @@
 package me.voper.slimeframe.implementation.items.machines;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.With;
 import lombok.experimental.Accessors;
 
 // Credits to Mooy1

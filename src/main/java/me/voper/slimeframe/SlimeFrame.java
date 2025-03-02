@@ -7,28 +7,32 @@ import java.util.logging.Level;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.geysermc.geyser.api.GeyserApi;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-
 import me.voper.slimeframe.core.datatypes.MerchantRecipeListDataType;
 import me.voper.slimeframe.core.managers.CommandsManager;
 import me.voper.slimeframe.core.managers.RelicInventoryManager;
 import me.voper.slimeframe.core.managers.SettingsManager;
 import me.voper.slimeframe.core.managers.SupportedPluginManager;
 import me.voper.slimeframe.implementation.SFrameItems;
-import me.voper.slimeframe.implementation.listeners.*;
+import me.voper.slimeframe.implementation.listeners.AdvancedMobDropListener;
+import me.voper.slimeframe.implementation.listeners.BlockPlaceListener;
+import me.voper.slimeframe.implementation.listeners.CoolantRaknoidsListener;
+import me.voper.slimeframe.implementation.listeners.RelicInventoryListener;
+import me.voper.slimeframe.implementation.listeners.RelicsListener;
+import me.voper.slimeframe.implementation.listeners.VillagerTradeListener;
 import me.voper.slimeframe.implementation.researches.Researches;
 import me.voper.slimeframe.implementation.tasks.ArmorMonitorTask;
 import me.voper.slimeframe.implementation.tasks.CoolantRaknoidsTask;
 import net.guizhanss.guizhanlib.updater.UpdaterConfig;
 import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
-import org.bstats.bukkit.Metrics;
-import org.geysermc.geyser.api.GeyserApi;
 
 public class SlimeFrame extends JavaPlugin implements SlimefunAddon {
 
@@ -67,14 +71,14 @@ public class SlimeFrame extends JavaPlugin implements SlimefunAddon {
             geyserApi = GeyserApi.api();
         }
 
-        this.settingsManager = new SettingsManager(this);
-        this.relicInventoryManager = new RelicInventoryManager(this);
-        this.commandsManager = new CommandsManager(this);
+        this.settingsManager = new SettingsManager(SlimeFrame.getInstance());
+        this.relicInventoryManager = new RelicInventoryManager(SlimeFrame.getInstance());
+        this.commandsManager = new CommandsManager(SlimeFrame.getInstance());
 
         this.relicInventoryManager.setup();
         this.commandsManager.setup();
 
-        new SFrameItems(this).setup();
+        new SFrameItems(SlimeFrame.getInstance()).setup();
 
         Researches.setup();
 
@@ -92,7 +96,7 @@ public class SlimeFrame extends JavaPlugin implements SlimefunAddon {
     @Override
     public void onDisable() {
         relicInventoryManager.saveConfig();
-        Bukkit.getScheduler().cancelTasks(this);
+        Bukkit.getScheduler().cancelTasks(SlimeFrame.getInstance());
     }
 
     private void logStart() {

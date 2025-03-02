@@ -3,7 +3,6 @@ package me.voper.slimeframe.implementation.groups;
 import org.bukkit.Material;
 
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.utils.Colors;
 import me.voper.slimeframe.utils.HeadTextures;

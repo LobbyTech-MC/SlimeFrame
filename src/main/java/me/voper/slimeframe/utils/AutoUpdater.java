@@ -1,6 +1,11 @@
 package me.voper.slimeframe.utils;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.logging.Logger;
@@ -8,15 +13,15 @@ import java.util.logging.Logger;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import org.apache.maven.artifact.versioning.ComparableVersion;
+
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
+import lombok.Getter;
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.managers.SettingsManager;
 import me.voper.slimeframe.implementation.listeners.WarnOperatorsListener;
-
-import lombok.Getter;
-import org.apache.maven.artifact.versioning.ComparableVersion;
 
 public final class AutoUpdater implements Runnable {
 

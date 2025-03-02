@@ -21,15 +21,13 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.blocks.BlockPosition;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-
-import me.voper.slimeframe.implementation.items.abstracts.AbstractMachine;
-import me.voper.slimeframe.utils.MachineUtils;
-import me.voper.slimeframe.utils.Utils;
-
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
+import me.voper.slimeframe.implementation.items.abstracts.AbstractMachine;
+import me.voper.slimeframe.utils.MachineUtils;
+import me.voper.slimeframe.utils.Utils;
 import net.md_5.bungee.api.ChatColor;
 
 @Accessors(chain = true)

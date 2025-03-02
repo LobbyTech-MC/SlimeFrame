@@ -8,10 +8,8 @@ import org.bukkit.inventory.ItemStack;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemConsumptionHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-
 import me.voper.slimeframe.implementation.SFrameStacks;
 import me.voper.slimeframe.implementation.groups.Groups;
-
 import net.md_5.bungee.api.ChatColor;
 
 public class CoolantCanister extends SimpleSlimefunItem<ItemConsumptionHandler> {

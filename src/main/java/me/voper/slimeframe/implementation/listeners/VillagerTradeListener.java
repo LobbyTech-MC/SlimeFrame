@@ -8,8 +8,8 @@ import java.util.concurrent.ThreadLocalRandom;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import com.google.common.base.Preconditions;
-
+import org.apache.commons.math3.distribution.EnumeratedDistribution;
+import org.apache.commons.math3.util.Pair;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -21,16 +21,14 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.MerchantRecipe;
 
+import com.google.common.base.Preconditions;
+
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-
 import me.voper.slimeframe.SlimeFrame;
 import me.voper.slimeframe.core.managers.SettingsManager;
 import me.voper.slimeframe.implementation.items.resources.SpecialOre;
-
 import net.md_5.bungee.api.ChatColor;
-import org.apache.commons.math3.distribution.EnumeratedDistribution;
-import org.apache.commons.math3.util.Pair;
 
 @ParametersAreNonnullByDefault
 public class VillagerTradeListener implements Listener {

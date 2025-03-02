@@ -12,10 +12,8 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
-
-import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
-
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
+import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
 
 public class ArtificialMangrove extends AbstractProcessorMachine implements RecipeDisplayItem {
 

@@ -19,17 +19,15 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.inventory.InvUtils;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 import io.github.thebusybiscuit.slimefun4.utils.itemstack.ItemStackWrapper;
-
+import lombok.Setter;
+import lombok.experimental.Accessors;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.voper.slimeframe.implementation.groups.Groups;
 import me.voper.slimeframe.implementation.items.abstracts.AbstractProcessorMachine;
 import me.voper.slimeframe.implementation.items.multiblocks.Foundry;
 import me.voper.slimeframe.utils.MachineUtils;
 import me.voper.slimeframe.utils.RandomItemStacks;
-
-import lombok.Setter;
-import lombok.experimental.Accessors;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 
 @Accessors(chain = true)
 public class Putrifier extends AbstractProcessorMachine implements RecipeDisplayItem {
