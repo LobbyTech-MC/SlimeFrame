@@ -51,11 +51,14 @@ public class RelicInventoryManager {
             }
         }
 
-        try {
-            configFile.save(file);
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (configFile != null) {
+        	try {
+        		configFile.save(file);
+        	} catch (IOException e) {
+        		e.printStackTrace();
+        	}
         }
+        
     }
 
     public RelicInventory getRelicInventory(@Nonnull Player player) {

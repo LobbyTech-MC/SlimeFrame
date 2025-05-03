@@ -4,10 +4,10 @@ options:
   # This option is only available if auto-update is set to true
   # Be careful with this option, as a new major version represents a breaking change
   auto-update-major: false
-  enable-researches: false
+  enable-researches: true
   # 如果服务器安装了 AdvancedEnchantments
   # 该选项会使灵魂契约提供AE的物品
-  enable-ae-items-in-soul-contracts: false
+  enable-ae-items-in-soul-contracts: true
   # 村民提供包含粘液战甲的矿石交易的几率（百分比）
   ore-trade-chance: 1
 

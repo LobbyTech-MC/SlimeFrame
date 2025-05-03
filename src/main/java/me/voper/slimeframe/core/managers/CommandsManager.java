@@ -11,13 +11,12 @@ import me.voper.slimeframe.implementation.items.relics.Relic;
 
 public class CommandsManager extends PaperCommandManager {
 
-    private final SlimeFrame plugin;
-    private final SettingsManager sm;
+    private final SettingsManager sm = SlimeFrame.getSettingsManager();;
+    
+    
 
-    public CommandsManager(@Nonnull SlimeFrame plugin) {
-        super(plugin);
-        this.plugin = plugin;
-        this.sm = SlimeFrame.getSettingsManager();
+    public CommandsManager() {
+        super(SlimeFrame.getInstance());
     }
 
     public void setup() {
@@ -46,9 +45,5 @@ public class CommandsManager extends PaperCommandManager {
     private void registerCommandCompletions() {
         this.getCommandCompletions().registerCompletion("refinement", c -> Arrays.stream(Relic.Refinement.values()).map(Enum::name).toList());
     }
-
-	public SlimeFrame getPlugin() {
-		return plugin;
-	}
 
 }

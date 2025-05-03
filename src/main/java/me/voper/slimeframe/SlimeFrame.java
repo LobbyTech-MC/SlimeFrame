@@ -73,7 +73,7 @@ public class SlimeFrame extends JavaPlugin implements SlimefunAddon {
 
         this.settingsManager = new SettingsManager(SlimeFrame.getInstance());
         this.relicInventoryManager = new RelicInventoryManager(SlimeFrame.getInstance());
-        this.commandsManager = new CommandsManager(SlimeFrame.getInstance());
+        this.commandsManager = new CommandsManager();
 
         this.relicInventoryManager.setup();
         this.commandsManager.setup();
@@ -95,7 +95,9 @@ public class SlimeFrame extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onDisable() {
-        relicInventoryManager.saveConfig();
+    	if (relicInventoryManager != null) {
+    		relicInventoryManager.saveConfig();
+    	}
         Bukkit.getScheduler().cancelTasks(SlimeFrame.getInstance());
     }
 
