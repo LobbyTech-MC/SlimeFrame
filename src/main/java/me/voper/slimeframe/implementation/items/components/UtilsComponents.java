@@ -131,7 +131,8 @@ public class UtilsComponents {
             return COMPONENTS_MAP.get(item).getNeuralNexusCore();
         }
 
-        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("Prime", "");
+        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("精制", "").replace("终极", "");
+
         String itemId = item.getItemId();
 
         SlimefunItemStack neuralNexus = SFrameTheme.sfStackFromTheme(
@@ -140,7 +141,7 @@ public class UtilsComponents {
                 SFrameStacks.PRIME_COMPONENTS_THEME.withNameColor(Colors.GOLD_2),
                 displayName + "神经网络核心",
                 "注入神经通路和突触电路的专用核心，",
-                "利用了先进 Warframe 科技的力量。",
+                "利用了先进战甲科技的力量。",
                 "用于合成：" + item.getDisplayName()
         );
 
