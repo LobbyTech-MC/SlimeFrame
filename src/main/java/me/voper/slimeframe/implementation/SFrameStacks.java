@@ -125,7 +125,7 @@ public final class SFrameStacks {
             "WF_OROKIN_WAND",
             Material.STICK,
             UTILS_TOOLS_THEME,
-            "Orokin 权杖",
+            "金石权杖",
             "该权杖拥有收集部分特殊方块的能力。",
             "例如：强化深板岩、紫水晶母岩。",
             "",
@@ -136,8 +136,8 @@ public final class SFrameStacks {
             "WF_PRIME_OROKIN_WAND",
             Material.BLAZE_ROD,
             UTILS_TOOLS_THEME.withNameColor(ChatColor.YELLOW),
-            "Orokin 权杖 Prime",
-            "改进版本的 Orokin 权杖。",
+            "精制的金石权杖",
+            "改进版本的金石权杖。",
             "",
             Lore.usesLeft(1024)
     );
@@ -173,7 +173,7 @@ public final class SFrameStacks {
             Material.BLACKSTONE_SLAB,
             UTILS_TOOLS_THEME,
             "物品投影仪",
-            "这种由 Corpus 制作的设备",
+            "这种由神经元制作的设备",
             "可以为任何物品生成全息投影。"
     );
 
@@ -318,7 +318,7 @@ public final class SFrameStacks {
             HeadTextures.CUBIC_DIODES,
             RESOURCES_THEME,
             "立方二极管",
-            "用以产生 Corpus 量子网络的重要元件。"
+            "用以产生神经元量子网络的重要元件。"
     );
 
     public static final SlimefunItemStack PLASTIDS = SFrameTheme.sfStackFromTheme(
@@ -351,7 +351,7 @@ public final class SFrameStacks {
             Material.DETECTOR_RAIL,
             RESOURCES_THEME,
             "控制模块",
-            "机器人的自主处理器。Corpus 设计。"
+            "机器人的自主处理器。"
     );
 
     public static final SlimefunItemStack GALLIUM = SFrameTheme.sfStackFromTheme(
@@ -368,8 +368,7 @@ public final class SFrameStacks {
             Material.BONE_MEAL,
             RESOURCES_THEME,
             "非晶态合金",
-            "一种非晶态的固体；",
-            "可能是 Orokin 科技。"
+            "一种非晶态的固体"
     );
 
     public static final SlimefunItemStack NEURAL_SENSORS = SFrameTheme.sfStackFromTheme(
@@ -377,8 +376,7 @@ public final class SFrameStacks {
             Material.FERMENTED_SPIDER_EYE,
             RESOURCES_THEME,
             "神经传感器",
-            "植入神经控制扩增系统的链接，",
-            "由Grineer设计。"
+            "植入神经控制扩增系统的链接，"
     );
 
     public static final SlimefunItemStack NEURODES = SFrameTheme.sfStackFromTheme(
@@ -386,15 +384,15 @@ public final class SFrameStacks {
             Material.SPIDER_EYE,
             RESOURCES_THEME,
             "神经元",
-            "从 Infested 身上收集的生物感应器官。"
+            "从怪物身上收集的生物感应器官。"
     );
 
     public static final SlimefunItemStack OROKIN_CELL = SFrameTheme.sfStackFromTheme(
             "WF_OROKIN_CELL",
             Material.TURTLE_EGG,
             RESOURCES_THEME,
-            "Orokin 电池",
-            "Orokin 时代流传下来的远古能量包。"
+            "能量电池",
+            "上古时代流传下来的远古能量包。"
     );
 
     public static final SlimefunItemStack TELLURIUM_FRAGMENT = SFrameTheme.sfStackFromTheme(
@@ -569,9 +567,9 @@ public final class SFrameStacks {
             "WF_CRYO_EXTRACTOR_3",
             Material.BEACON,
             MACHINES_THEME,
-            ChatColor.DARK_BLUE + "永冻晶矿提取器 " + ChatColor.GOLD + "Prime",
-            "永冻晶矿提取器的 Prime 版本，",
-            "使用 Orokin 科技来获得更高的效率。",
+            ChatColor.DARK_BLUE + "终极永冻晶矿提取器 " + ChatColor.GOLD + "",
+            "最强的永冻晶矿提取器",
+            "使用神经元来获得更高的效率。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(2048),
@@ -594,8 +592,8 @@ public final class SFrameStacks {
             "WF_CONCRETE_GEN",
             Material.BRICKS,
             MACHINES_THEME,
-            "混凝土生成器",
-            "这台 Orokin 机器可以生成任何混凝土",
+            "混凝土厂",
+            "这个混凝土厂可以生产任何混凝土",
             "",
             LoreBuilder.machine(MachineTier.GOOD, MachineType.MACHINE),
             Lore.powerPerSecond(128),
@@ -606,8 +604,8 @@ public final class SFrameStacks {
             "WF_CONCRETE_GEN_2",
             Material.NETHER_BRICKS,
             MACHINES_THEME,
-            "高级混凝土生成器",
-            "改进版本的混凝土生成器。",
+            "高级混凝土厂",
+            "经过改进的混凝土厂",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             Lore.powerPerSecond(256),
@@ -618,9 +616,9 @@ public final class SFrameStacks {
             "WF_CONCRETE_GEN_3",
             Material.RED_NETHER_BRICKS,
             MACHINES_THEME,
-            MACHINES_THEME.getNameColor() + "混凝土生成器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的混凝土生成器，",
-            "专为任何需要大量混凝土的玩家打造。",
+            MACHINES_THEME.getNameColor() + "终极混凝土厂" + ChatColor.GOLD + "",
+            "拥有最顶尖技术的混凝土厂，",
+            "可以满足大量混凝土需求",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(512),
@@ -656,7 +654,7 @@ public final class SFrameStacks {
             Material.MOSS_BLOCK,
             MACHINES_THEME,
             ChatColor.GREEN + "花朵生成器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的花朵生成器，",
+            "最强大的花朵生成器，",
             "专为任何需要大量花朵的玩家打造。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -669,7 +667,7 @@ public final class SFrameStacks {
             Material.WHITE_WOOL,
             MACHINES_THEME.withNameColor(ChatColor.DARK_AQUA),
             "羊毛生成器",
-            "使用 Orokin 科技生产大量的羊毛。",
+            "使用神经元生产大量的羊毛。",
             "",
             LoreBuilder.machine(MachineTier.GOOD, MachineType.MACHINE),
             Lore.powerPerSecond(128),
@@ -692,8 +690,8 @@ public final class SFrameStacks {
             "WF_WOOL_GEN_3",
             Material.WHITE_WOOL,
             MACHINES_THEME,
-            ChatColor.DARK_AQUA + "羊毛生成器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的羊毛生成器，",
+            ChatColor.DARK_AQUA + "终极羊毛生成器" + ChatColor.GOLD + "",
+            "最强大的羊毛生成器，",
             "专为任何需要大量羊毛的玩家打造。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -742,8 +740,8 @@ public final class SFrameStacks {
             "WF_ARTIFICIAL_MANGROVE_3",
             Material.PACKED_MUD,
             MACHINES_THEME,
-            Colors.BROWN + "人工红树林 " + ChatColor.GOLD + "Prime",
-            "尖端版本的人工红树林。",
+            Colors.BROWN + "终极人工红树林 " + ChatColor.GOLD + "",
+            "最强大的人工红树林。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(512),
@@ -778,8 +776,8 @@ public final class SFrameStacks {
             "WF_BASALT_GEN_3",
             Material.SMOOTH_BASALT,
             MACHINES_THEME,
-            ChatColor.DARK_GRAY + "玄武岩生成器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的玄武岩生成器，",
+            ChatColor.DARK_GRAY + "终极玄武岩生成器 " + ChatColor.GOLD + "",
+            "最强大的玄武岩生成器，",
             "专为任何需要大量玄武岩的玩家打造。",
             "",
             "",
@@ -817,7 +815,7 @@ public final class SFrameStacks {
             "WF_CHUNK_EATER_3",
             enchantedItem(Material.CRYING_OBSIDIAN),
             MACHINES_THEME,
-            Colors.BLUE_VIOLET + "区块吞噬者 " + ChatColor.GOLD + "Prime",
+            Colors.BLUE_VIOLET + "终极区块吞噬者 " + ChatColor.GOLD + "",
             "吞噬区块内的每一层。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -853,8 +851,8 @@ public final class SFrameStacks {
             "WF_TREE_PEELER_3",
             Material.STONECUTTER,
             MACHINES_THEME,
-            Colors.BROWN + "去皮器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的去皮器。",
+            Colors.BROWN + "终极去皮器 " + ChatColor.GOLD + "",
+            "最强大的去皮器。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(512),
@@ -912,8 +910,8 @@ public final class SFrameStacks {
             "WF_SULFATE_PRODUCER_3",
             Material.FURNACE,
             MACHINES_THEME,
-            ChatColor.RED + "硫酸盐生成器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的硫酸盐生成器。",
+            ChatColor.RED + "终极硫酸盐生成器 " + ChatColor.GOLD + "",
+            "最强大的硫酸盐生成器。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(512),
@@ -950,8 +948,8 @@ public final class SFrameStacks {
             "WF_DUST_GEN_3",
             Material.FURNACE,
             MACHINES_THEME,
-            Colors.CRAYOLA_BLUE + "矿粉生成器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的矿粉生成器。",
+            Colors.CRAYOLA_BLUE + "终极矿粉生成器 " + ChatColor.GOLD + "",
+            "最强大的矿粉生成器",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(1024),
@@ -989,8 +987,8 @@ public final class SFrameStacks {
             "WF_GLASS_GENERATOR_3",
             Material.BLUE_STAINED_GLASS,
             MACHINES_THEME,
-            Colors.NEON_BLUE + "玻璃生成器 " + ChatColor.GOLD + "Prime",
-            "使用 Orokin 科技制作的",
+            Colors.NEON_BLUE + "终极玻璃生成器 " + ChatColor.GOLD + "",
+            "使用神经元制作的",
             "尖端版玻璃生成器。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -1028,7 +1026,7 @@ public final class SFrameStacks {
             Material.MUDDY_MANGROVE_ROOTS,
             MACHINES_THEME,
              Colors.BROWN + "腐化器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的腐化器。",
+            "最强大的腐化器。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(512),
@@ -1063,8 +1061,8 @@ public final class SFrameStacks {
             "WF_TERRACOTTA_GEN_3",
             Material.PURPLE_TERRACOTTA,
             MACHINES_THEME,
-        ChatColor.LIGHT_PURPLE + "陶瓦生成器 " + ChatColor.GOLD + "Prime",
-            "尖端版本的陶瓦生成器。",
+        ChatColor.LIGHT_PURPLE + "终极陶瓦生成器 " + ChatColor.GOLD + "",
+            "最强大的陶瓦生成器。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(512),
@@ -1140,7 +1138,7 @@ public final class SFrameStacks {
             Material.GREEN_GLAZED_TERRACOTTA,
             GENERATORS_THEME.withNameColor(ChatColor.of("#4A26A6")),
             "公理能源引擎",
-            "公理能源引擎是古代 Orokin 科技的一个奇迹。",
+            "公理能源引擎是古代神经元科技的一个奇迹。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             Lore.powerPerSecond(32000),
@@ -1188,9 +1186,9 @@ public final class SFrameStacks {
             "WF_ASTRAL_PRIME_GEN",
             Material.BLACK_GLAZED_TERRACOTTA,
             GENERATORS_THEME.withNameColor(ChatColor.GOLD),
-            ChatColor.BOLD + "星辰发电机 Prime",
-            "星辰发电机 Prime 是星际战甲顶尖能源科技的缩影。",
-            "以天体为燃料，并使用 Prime 技术增强输出，",
+            ChatColor.BOLD + "终极星辰发电机",
+            "终极星辰发电机是星际战甲顶尖能源科技的缩影。",
+            "以天体为燃料，并使用神经元技术增强输出，",
             "为无与伦比的能源生产设定了标准。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),

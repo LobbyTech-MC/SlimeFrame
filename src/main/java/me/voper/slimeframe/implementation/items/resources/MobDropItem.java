@@ -37,7 +37,7 @@ import net.md_5.bungee.api.ChatColor;
 @Getter
 public class MobDropItem extends SlimefunItem implements AdvancedMobDrop, RecipeDisplayItem {
 
-    public static final RecipeType RECIPE_TYPE = new RecipeType(Keys.createKey("mob_drop_recipe"), new CustomItemStack(Material.IRON_SWORD, "&rKill the specified Mobs to obtain this Item"));
+    public static final RecipeType RECIPE_TYPE = new RecipeType(Keys.createKey("mob_drop_recipe"), new CustomItemStack(Material.IRON_SWORD, "&e击杀指定生物获得这个物品"));
 
     private int globalDrobChance = 0;
     private Map<EntityType, Integer> mobChanceMap = new HashMap<>();
