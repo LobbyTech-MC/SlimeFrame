@@ -50,7 +50,7 @@ public class UtilsComponents {
             return COMPONENTS_MAP.get(item).getVoidShardEssence();
         }
 
-        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("Prime", "");
+        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("终极", "");
         String itemId = item.getItemId();
 
         SlimefunItemStack voidShardEssence = SFrameTheme.sfStackFromTheme(
@@ -61,7 +61,7 @@ public class UtilsComponents {
                 "一块浓缩的虚空能量碎片，",
                 "蕴含着未开发的力量。",
                 "这种精华散发着超凡脱俗的气息，",
-                "是制作 Prime 物品的必要材料。",
+                "是制作神经元物品的必要材料。",
                 "用于合成" + item.getDisplayName()
         );
 
@@ -102,7 +102,7 @@ public class UtilsComponents {
             return COMPONENTS_MAP.get(item).getTemporalCogwheel();
         }
 
-        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("Prime", "");
+        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("终极", "");
         String itemId = item.getItemId();
 
         SlimefunItemStack temporalCog = SFrameTheme.sfStackFromTheme(
@@ -131,7 +131,7 @@ public class UtilsComponents {
             return COMPONENTS_MAP.get(item).getNeuralNexusCore();
         }
 
-        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("精制", "").replace("终极", "");
+        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("终极", "");
 
         String itemId = item.getItemId();
 

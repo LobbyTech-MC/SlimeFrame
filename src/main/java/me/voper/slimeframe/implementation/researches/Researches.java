@@ -35,15 +35,15 @@ public final class Researches {
         create(Keys.PRIME_NOSAM_RESEARCH, 5, "精通诺萨姆切割器", 90, SFrameStacks.PRIME_NOSAM_PICK);
 
         create(Keys.MACHINES_RESEARCH, 6, "使用基本机器", 30, Groups.MACHINES.getItems().stream()
-                .filter(item -> !item.getItemName().contains("Prime") && !item.getItemName().contains("高级"))
+                .filter(item -> !item.getItemName().contains("终极") && !item.getItemName().contains("高级"))
                 .toList());
 
         create(Keys.ADV_MACHINES_RESEARCH, 7, "使用高级机器", 50, Groups.MACHINES.getItems().stream()
                 .filter(item -> item.getItemName().contains("高级"))
                 .toList());
 
-        create(Keys.PRIME_MACHINES_RESEARCH, 8, "使用 Prime 机器", 60, Groups.MACHINES.getItems().stream()
-                .filter(item -> item.getItemName().contains("Prime"))
+        create(Keys.PRIME_MACHINES_RESEARCH, 8, "使用终极机器", 60, Groups.MACHINES.getItems().stream()
+                .filter(item -> item.getItemName().contains("终极"))
                 .toList());
 
         create(Keys.CRYO_SUIT_RESEARCH, 9, "释放低温技术的潜力", 50,
@@ -55,8 +55,8 @@ public final class Researches {
                 SFrameStacks.PRISMA_POWER_CORE, SFrameStacks.VOIDFORGE_CELESTIUM_GENERATOR, SFrameStacks.AXIOM_ENERGENESIS_ENGINE,
                 SFrameStacks.CHRONOS_INFINITY_DYNAMO, SFrameStacks.PRIMORDIAL_ETERNACORE_REACTOR, SFrameStacks.VOIDLIGHT_FUSION_GENERATOR);
 
-        create(Keys.ASTRAL_GEN_RESEARCH, 12, "使用 Prime 发电机主宰能量", 50, SFrameStacks.ASTRAL_PRIME_GENERATOR);
-        create(Keys.MULTIBLOCKS_RESEARCH, 13, "Comprehending the complexities of SlimeFrame Multiblocks", 30, SFrameStacks.FOUNDRY);
+        create(Keys.ASTRAL_GEN_RESEARCH, 12, "使用终极发电机主宰能量", 50, SFrameStacks.ASTRAL_PRIME_GENERATOR);
+        create(Keys.MULTIBLOCKS_RESEARCH, 13, "理解粘液战甲多方块机器的复杂性", 30, SFrameStacks.FOUNDRY);
         create(Keys.CONDENSED_PLATE_RESEARCH, 14, "揭开浓缩板的秘密", 40,
             SFrameStacks.CONDENSED_PLATE);
 

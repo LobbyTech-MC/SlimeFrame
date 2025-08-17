@@ -136,7 +136,7 @@ public final class SFrameStacks {
             "WF_PRIME_OROKIN_WAND",
             Material.BLAZE_ROD,
             UTILS_TOOLS_THEME.withNameColor(ChatColor.YELLOW),
-            "精制神经元权杖",
+            "终极神经元权杖",
             "改进版本的神经元权杖。",
             "",
             Lore.usesLeft(1024)

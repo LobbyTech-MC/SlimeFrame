@@ -53,7 +53,7 @@ public class PrimeComponents {
             return COMPONENTS_MAP.get(item).getControlUnit();
         }
 
-        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("Prime", "");
+        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("终极", "");
         String itemId = item.getItemId();
 
         SlimefunItemStack controlUnit = SFrameTheme.sfStackFromTheme(
@@ -61,8 +61,8 @@ public class PrimeComponents {
                 HeadTextures.MACHINE_CONTROL,
                 SFrameStacks.PRIME_COMPONENTS_THEME.withNameColor(Colors.BRONZE),
                 displayName + "控制单元",
-                "控制单元是 Prime 技术的重要部分，",
-                "它能为 Prime 机器提供无缝协调与精准度。",
+                "控制单元是终极神经元技术的重要部分，",
+                "它能为神经元机器提供无缝协调与精准度。",
                 "用于合成：" + item.getDisplayName()
         );
 
@@ -104,7 +104,7 @@ public class PrimeComponents {
             return COMPONENTS_MAP.get(item).getPowerCell();
         }
 
-        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("Prime", "");
+        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("终极", "");
         String itemId = item.getItemId();
 
         SlimefunItemStack powerCell = SFrameTheme.sfStackFromTheme(
@@ -112,7 +112,7 @@ public class PrimeComponents {
                 HeadTextures.MACHINE_POWER_CELL,
                 SFrameStacks.PRIME_COMPONENTS_THEME.withNameColor(Colors.SILVER),
                 displayName + "能量单元",
-                "能量单元，Prime 机器的基础组件，",
+                "能量单元，神经元机器的基础组件，",
                 "在其紧凑的外形中蕴含无尽的的能量，",
                 "为巅峰之作提供动力。",
                 "用于合成：" + item.getDisplayName()
@@ -133,7 +133,7 @@ public class PrimeComponents {
             return COMPONENTS_MAP.get(item).getCoreModule();
         }
 
-        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("Prime", "");
+        String displayName = ChatColor.stripColor(item.getDisplayName()).replace("终极", "");
         String itemId = item.getItemId();
 
         SlimefunItemStack coreModule = SFrameTheme.sfStackFromTheme(
@@ -141,7 +141,7 @@ public class PrimeComponents {
                 HeadTextures.MACHINE_CORE,
                 SFrameStacks.PRIME_COMPONENTS_THEME.withNameColor(Colors.GOLD_2),
                 displayName + "核心模块",
-                "核心模块是制作 Prime 机器的关键组件，",
+                "核心模块是制作神经元机器的关键组件，",
                 "通过先进的功能与复杂的技术",
                 "释放出机器真正的潜能。",
                 "用于合成：" + item.getDisplayName()
