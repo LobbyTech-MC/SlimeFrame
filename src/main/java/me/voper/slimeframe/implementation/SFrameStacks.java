@@ -693,7 +693,7 @@ public final class SFrameStacks {
             MACHINES_THEME,
             ChatColor.DARK_AQUA + "终极羊毛生成器" + ChatColor.GOLD + "",
             "拥有超能的羊毛生成器，",
-            "专为任何需要大量羊毛的玩家打造。",
+            "它可以满足大量羊毛需求。",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             Lore.powerPerSecond(512),
